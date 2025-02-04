@@ -3,8 +3,8 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Le Savoirs à Votre Portée</h1>
-            <p>Découvrez un espace dédié à la culture, à la connaissance et à l'évasion. Que vous soyez passionné de lecture, étudiant à la recherche de ressources ou simplement curieux d’apprendre, notre bibliothèque vous ouvre ses portes avec une collection variée et des services adaptés à tous les âges. Explorez, empruntez, et laissez-vous inspirer.</p>
+            <h1 class="display-3">Hello, World!</h1>
+            <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.</p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button"> À propos &raquo;</a></p>
         </div>
   </div>
