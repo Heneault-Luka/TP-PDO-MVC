@@ -32,6 +32,7 @@ class Nationalite{
 
     private $numContinent;
 
+//
     /**
      * revoi le continent
      *
@@ -54,6 +55,7 @@ class Nationalite{
 
         return $this;
     }
+//
 
     /**
      * Retourne les nationalites
@@ -74,7 +76,8 @@ class Nationalite{
      * @param integer $id
      * @return Nationalite
      */
-    public static function findById(int $id) :Nationalite{
+    public static function findById(int $id) :Nationalite
+    {
         $req=MonPdo::getInstance()->prepare("select * from nationalite where num= :id");
         $req->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Nationalite');
         $req->bindParam(':id',$id);
@@ -90,7 +93,8 @@ class Nationalite{
      */
     public static function add(Nationalite $nationalite) :int{ 
         $req=MonPdo::getInstance()->prepare("insert into nationalite(libelle,numContinent) values(:libelle, :numContinent)");
-        $req->bindParam(':libelle',$nationalite->getLibelle());
+        $req->bindParam(':id',$nationalite->numNationalite);
+        $req->bindParam(':libelle',$nationalite->LibNationalite);
         $req->bindParam(':numContinent',$nationalite->numContinent);
         $nb=$req->execute();
         return $nb;
@@ -101,7 +105,8 @@ class Nationalite{
      * @param Nationalite $nationalite
      * @return integer
      */
-    public static function update(Nationalite $nationalite) :int{
+    public static function update(Nationalite $nationalite) :int
+    {
         $req=MonPdo::getInstance()->prepare("update nationalite set libelle= :libelle , numContinent= :numContinent where num= :id");
         $req->bindParam(':id',$nationalite->getNum());
         $req->bindParam(':libelle',$nationalite->getLibelle());
