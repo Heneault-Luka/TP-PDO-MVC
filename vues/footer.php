@@ -1,5 +1,5 @@
 <footer class="container">
-  <p>&copy; Bibliothèque 2025</p>
+  <p>&copy;Luka Heneault</p>
 </footer>
 <div class="modal fade" id="modalsup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
